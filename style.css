@@ -1,7 +1,7 @@
 body {
   margin: 0;
   overflow: hidden;
-  background: black; 
+  background: black;
 }
 
 #bg {
@@ -9,12 +9,12 @@ body {
   height: 100vh;
 
   background: url("snowydark.png") center no-repeat;
-  background-size: contain;
+  background-size: cover;
 
   position: relative;
 
-  border: 30px solid black;
-  box-sizing: border-box;   
+  border: clamp(10px, 5vw, 30px) solid black;
+  box-sizing: border-box;
 }
 
 #bg::after {
@@ -23,20 +23,20 @@ body {
   inset: 0;
 
   background: url("snowybright.png") center no-repeat;
-  background-size: contain;
+  background-size: cover;
 
   -webkit-mask: radial-gradient(
-    circle 70px at var(--x) var(--y),
-    #fff 0 70px,
-    transparent 80px
+    circle 80px at var(--x) var(--y),
+    #fff 0 80px,
+    transparent 110px
   );
           mask: radial-gradient(
-    circle 70px at var(--x) var(--y),
-    #fff 0 70px,
-    transparent 80px
+    circle 80px at var(--x) var(--y),
+    #fff 0 80px,
+    transparent 110px
   );
 
   opacity: var(--afterOpacity, 0);
-  transition: opacity 0.2s;
+  transition: opacity 0.15s linear;
   pointer-events: none;
 }
