@@ -3,32 +3,29 @@ html, body {
   padding: 0;
 }
 
-div {
-  text-align: center;
-  color: #bdbfd9;
-}
-
-a { 
-  text-decoration: none; 
-}
-
-a.nav-link:link {
-   color: #fb3f00;
-}
-a.nav-link:visited {
-   color: #fb3f00;
-}
-a.nav-link:hover {
-   color: #8282bd;
-   text-decoration: underline;
-}
-a.nav-link:active {
-   color: #fb3f00;
-}
-
 .center-screen {
   position: fixed;
-  top: 50%;
+  top: 85%;            
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  width: 90%;
+  text-align: center;
+}
+
+.glow-text {
+  color: #bdbfd9;
+  font-size: clamp(14px, 3vw, 22px);
+  padding: 10px;
+  backdrop-filter: blur(3px); 
+  mix-blend-mode: screen;
+}
+
+a.nav-link {
+  color: #fb3f00;
+  text-decoration: none;
+}
+
+a.nav-link:hover {
+  text-decoration: underline;
+  color: #8282bd;
 }
