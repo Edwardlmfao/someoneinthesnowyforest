@@ -1,0 +1,34 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  text-align: center;
+  color: #bdbfd9;
+}
+
+a { 
+  text-decoration: none; 
+}
+
+a.nav-link:link {
+   color: #fb3f00;
+}
+a.nav-link:visited {
+   color: #fb3f00;
+}
+a.nav-link:hover {
+   color: #8282bd;
+   text-decoration: underline;
+}
+a.nav-link:active {
+   color: #fb3f00;
+}
+
+.center-screen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
