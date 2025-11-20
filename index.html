@@ -4,6 +4,21 @@
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style2.css">
+  <script>
+  if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      document.body.innerHTML = `
+        <div style="
+            color: white;
+            font-family: Arial;
+            text-align: center;
+            margin-top: 40vh;
+        ">
+          This site is not available on mobile.
+        </div>
+      `;
+  }
+</script>
+
 </head>
 
 <body>
